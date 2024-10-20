@@ -2,6 +2,22 @@ import "./globals.css";
 import { jsonLd } from "./jsonLd";
 export { metadata } from './metadata'
 
+import { Fraunces, Montserrat } from "next/font/google"
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['700'],
+  variable: "--font-fraunces"
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['500', '700'],
+  variable: "--font-montserrat"
+})
+
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -10,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`antialiased h-full`}
+        className={`${fraunces.variable} ${montserrat.variable} antialiased h-full`}
       >
         <script
           type="application/ld+json"
