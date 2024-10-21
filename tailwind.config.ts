@@ -18,6 +18,12 @@ const config: Config = {
           1: "hsl(212, 21%, 14%)",
           2: "hsl(228, 12%, 48%)",
         }
+      },
+      fontFamily: {
+        sans: ['var(--font-montserrat)'],
+        serif: ['var(--font-fraunces)', {
+          fontVariationSettings: "'WONK' 1"
+        }]
       }
     },
   },

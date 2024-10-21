@@ -6,8 +6,10 @@ import { Fraunces, Montserrat } from "next/font/google"
 
 const fraunces = Fraunces({
   subsets: ['latin'],
-  weight: ['700'],
-  variable: "--font-fraunces"
+  weight: 'variable',
+  variable: "--font-fraunces",
+  axes: ["WONK"],
+  display: "swap"
 })
 
 const montserrat = Montserrat({
